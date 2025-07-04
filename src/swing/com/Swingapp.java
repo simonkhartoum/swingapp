@@ -26,7 +26,6 @@ public class Swingapp extends JFrame {
 		});
 	}
 
-	// ✅ Constructor fixed to match the class name
 	public Swingapp() {
 		setTitle("Pet Selector");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -36,14 +35,13 @@ public class Swingapp extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(new FlowLayout());
 
-		// Create radio buttons
+		
 		birdButton = new JRadioButton("Bird");
 		catButton = new JRadioButton("Cat");
 		dogButton = new JRadioButton("Dog");
 		rabbitButton = new JRadioButton("Rabbit");
 		pigButton = new JRadioButton("Pig");
 
-		// Add to group
 		ButtonGroup group = new ButtonGroup();
 		group.add(birdButton);
 		group.add(catButton);
@@ -51,14 +49,12 @@ public class Swingapp extends JFrame {
 		group.add(rabbitButton);
 		group.add(pigButton);
 
-		// Add listeners
 		addRadioButtonAction(birdButton);
 		addRadioButtonAction(catButton);
 		addRadioButtonAction(dogButton);
 		addRadioButtonAction(rabbitButton);
 		addRadioButtonAction(pigButton);
 
-		// Add to panel
 		contentPane.add(birdButton);
 		contentPane.add(catButton);
 		contentPane.add(dogButton);
